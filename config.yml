@@ -1,0 +1,18 @@
+title: GitHub gebruiken binnen je organisatie
+description: >-
+  In deze cursus kijken we naar de mogelijkheden om GitHub te gebruiken binnen
+  je organisatie.
+template:
+  repo: github-gebruiken-binnen-je-organisatie-template
+  name: github-gebruiken-binnen-je-organisatie
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
